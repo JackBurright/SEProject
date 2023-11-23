@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Test</h1>
+    <div>
+        <h1 th:text="${expense.date}"></h1>
+        <h1 th:text="${expense.amount}"></h1>
+        <h1 th:text="${expense.description}"></h1>
+    </div>  
+  
+    <form action="">
+        <input type="number">
+        <input type="text">
+        <button type="submit">Update</button>
+    </form>
+    
+</body>
+</html>
