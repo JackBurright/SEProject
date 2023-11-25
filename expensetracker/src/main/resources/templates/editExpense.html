@@ -2,20 +2,82 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .data-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .data-row h1 {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+        input[type="date"],
+        input[type="number"],
+        input[type="text"],
+        button {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test</h1>
-    <div>
-        <h1 th:text="${expense.date}"></h1>
-        <h1 th:text="${expense.amount}"></h1>
-        <h1 th:text="${expense.description}"></h1>
-    </div>  
-  
-    <form action="">
-        <input type="number">
-        <input type="text">
-        <button type="submit">Update</button>
-    </form>
-    
+    <div class="container">
+        <h1>Edit Expense</h1>
+
+        <form method="post" th:action="@{/expenses/update}" th:object="${expense}">
+            <div class="data-row">
+                <h1>Date</h1>
+                <input type="date" th:field="*{date}" placeholder="Date">
+            </div>
+            
+            <div class="data-row">
+                <h1>Price</h1>
+                <input type="number" th:field="*{amount}" placeholder="Amount">
+            </div>
+
+            <div class="data-row">
+                <h1>Description</h1>
+                <input type="text" th:field="*{description}" placeholder="Description">
+            </div>
+
+            <input type="hidden" th:field="*{id}">
+            <button type="submit">Update</button>
+        </form>
+    </div>
 </body>
 </html>
