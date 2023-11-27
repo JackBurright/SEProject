@@ -61,18 +61,19 @@
 
         <form method="post" th:action="@{/expenses/update}" th:object="${expense}">
             <div class="data-row">
-                <h1>Date</h1>
-                <input type="date" th:field="*{date}" placeholder="Date">
+                <h1>Date:</h1>
+                <h1 th:text="${expense.date}"></h1>
+                <!-- <input type="date" th:field="*{date}" th:value="*{date}" required> -->
             </div>
             
             <div class="data-row">
-                <h1>Price</h1>
-                <input type="number" th:field="*{amount}" placeholder="Amount">
+                <h1>Price:</h1>
+                <input type="number" th:field="*{amount}" placeholder="Amount" required>
             </div>
 
             <div class="data-row">
-                <h1>Description</h1>
-                <input type="text" th:field="*{description}" placeholder="Description">
+                <h1>Description:</h1>
+                <input type="text" th:field="*{description}" placeholder="Description" required>
             </div>
 
             <input type="hidden" th:field="*{id}">
