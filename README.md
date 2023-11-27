@@ -5,4 +5,9 @@ Steps to use the tracker
 2. use an IDE to run the files.
 3. open a page using localhost:8080
 4. must add: /expenses to get to the page.
-5. track your expenses. 
+5. track your expenses.
+
+add example images of UI: 
+
+
+add diagram for functionality
