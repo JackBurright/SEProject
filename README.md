@@ -1,0 +1,1 @@
+This GitHub pages hosts the code for our expense tracker known as the Money Allocation Station. The goal of this project is to create an simplified way of keeping track of a user's expenses that is both tangible and traceable. 
