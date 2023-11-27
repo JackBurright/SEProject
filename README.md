@@ -12,7 +12,7 @@ Expenses Pages:
 <img width="1430" alt="Screen Shot 2023-11-26 at 8 58 39 PM" src="https://github.com/JackBurright/SEProject/assets/122560394/57534252-b1b7-440c-b4d3-109e75f740af">
 
 Edit Expenses Page:
-<img width="547" alt="Screen Shot 2023-11-26 at 8 59 19 PM" src="https://github.com/JackBurright/SEProject/assets/122560394/6185ca48-b5a3-4fc3-96f3-963715d65f28">
+<img width="1430" alt="Screen Shot 2023-11-26 at 8 59 19 PM" src="https://github.com/JackBurright/SEProject/assets/122560394/6185ca48-b5a3-4fc3-96f3-963715d65f28">
 
 ![Blank diagram](https://github.com/JackBurright/SEProject/assets/122560394/6185ca48-b5a3-4fc3-96f3-963715d65f28)
 
