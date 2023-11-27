@@ -10,5 +10,5 @@ Steps to use the tracker
 add example images of UI: 
 
 
-add diagram for functionality
+MVC functionality diagram: 
 ![Blank diagram](https://github.com/JackBurright/SEProject/assets/111766281/8d8134c1-e06e-418b-89f3-750fd4792e70)
